@@ -8,24 +8,28 @@ class Contact
     private $mailClient;
     private $telClient;
     
+    function Contact{
+        
+    }
+    
     function getId(){
-        return idClient;
+        return $this->idClient;
     }
     
     function getNom(){
-        return nomClient;
+        return $this->nomClient;
     }
     
     function getPrenom(){
-        return prenomClient;
+        return $this->prenomClient;
     }
     
     function getMail(){
-        return mailClient;
+        return $this->mailClient;
     }
     
     function getTel(){
-        return telClient;
+        return $this->telClient;
     }
     
     function setNom($nom){
