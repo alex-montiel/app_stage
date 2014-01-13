@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 
 <?php
-    
+
     function connect_pdo(){
         try
         {
-            $objPdo = new Pdo('mysql:host=localhost;dbname=bddappli', 'test', '');
+            $objPdo = new PDO('mysql:host=127.0.0.1;dbname=bddappli', 'root', '');
         }
         catch(exception $e)
         {

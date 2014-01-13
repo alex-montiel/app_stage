@@ -1,4 +1,4 @@
-<?php include '../Passerelles/pdoContacts.php';?>
+<?php require '/Passerelles/pdoContacts.php';?>
 
 <table id='liste_contacts' border ='1'>
     <caption>Liste des contacts</caption>
