@@ -1,5 +1,4 @@
 <?php
-
 function  load_all_contacts(){
     $objPdo = connect_pdo();
     $req = 'SELECT * FROM contacts';
@@ -14,7 +13,7 @@ function  load_all_contacts(){
         $objContact = new Contact($intId, $strNom, $strPrenom, $strMail, $strTel);
         $tabContact[] = $objContact;
     }   
-    return $tabContact[];
+    return $tabContact;
 }
 
-
+?>

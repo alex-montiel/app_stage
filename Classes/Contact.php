@@ -1,6 +1,6 @@
 <?php
 
-class contacts
+class Contact
 {
     private $idClient;
     private $nomClient;
