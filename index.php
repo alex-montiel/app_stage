@@ -6,5 +6,5 @@
         <title>Application</title>
         <link href="style.css" rel="stylesheet">
     </head>
-    <?php include 'Vues/v_accueil.php'; ?>
+    <?php include 'Controlers/c_contacts.php'; ?>
 </html>

@@ -12,9 +12,10 @@ class pdoContacts{
             $intId = $ligne['id_contact'];
             $strNom = $ligne['nom_contact'];
             $strPrenom = $ligne['prenom_contact'];
+            $strSociete = $ligne['societe_contact'];
             $strMail = $ligne['email_contact'];
             $strTel = $ligne['telephone_contact'];
-            $objContact = new Contact($intId, $strNom, $strPrenom, $strMail, $strTel);
+            $objContact = new Contact($intId, $strNom, $strPrenom, $strSociete, $strMail, $strTel);
             $tabContact[] = $objContact;
         }   
         return $tabContact;

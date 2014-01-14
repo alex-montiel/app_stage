@@ -2,50 +2,64 @@
 
 class Contact
 {
-    private $idClient;
-    private $nomClient;
-    private $prenomClient;
-    private $mailClient;
-    private $telClient;
+    private $_idClient;
+    private $_nomClient;
+    private $_prenomClient;
+    private $_societe;
+    private $_mailClient;
+    private $_telClient;
     
-    function Contact{
-        
+    function Contact($id, $nom, $prenom,$societe, $mail, $tel){
+        $this->_idClient = $id;
+        $this->_nomClient = $nom;
+        $this->_prenomClient = $prenom;
+        $this->_societe = $societe;
+        $this->_mailClient = $mail;
+        $this->_telClient = $tel;
     }
     
     function getId(){
-        return $this->idClient;
+        return $this->_idClient;
     }
     
     function getNom(){
-        return $this->nomClient;
+        return $this->_nomClient;
     }
     
     function getPrenom(){
-        return $this->prenomClient;
+        return $this->_prenomClient;
+    }
+    
+    function getSociete(){
+        return $this->_societe;
     }
     
     function getMail(){
-        return $this->mailClient;
+        return $this->_mailClient;
     }
     
     function getTel(){
-        return $this->telClient;
+        return $this->_telClient;
     }
     
     function setNom($nom){
-        $this->nomClient = $nom;
+        $this->_nomClient = $nom;
     }
     
     function setPrenom($prenom){
-        $this->prenomClient = $prenom;
+        $this->_prenomClient = $prenom;
+    }
+    
+    function setSociete($societe){
+        $this->_societe = $societe;
     }
     
     function setMail($mail){
-        $this->mailClient = $mail;
+        $this->_mailClient = $mail;
     }
     
     function setTel($tel){
-        $this->telClient = $tel;
+        $this->_telClient = $tel;
     }
 }
 
