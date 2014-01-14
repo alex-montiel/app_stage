@@ -20,6 +20,17 @@ class pdoContacts{
             $tabContact[] = $objContact;
         }   
         return $tabContact;
-}
+    }
+    
+    public static function ajout_contact(){
+        $objPdo = pdoConnexion::connect_pdo();
+        $nom = $_GET['nom'];
+        $prenom = $_GET['prenom'];
+        $societe = $GET['societe'];
+        $mail = $_GET['mail'];
+        $telephone = $_GET['telephone'];
+        $req = "INSERT INTO clients VALUES ("."'".$nom."'"."'".$prenom."'"."'".$societe."'"."'".$mail."'"."'".$telephone."');";
+        
+    }
 
 }
