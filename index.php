@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<?php include 'Controlers/connexion.php'?>
+<?php include 'Passerelles/pdoConnexion.php'?>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Application</title>
-        <link href="style.css" rel="stylesheet">
-    </head>
-    <?php include 'Controlers/c_contacts.php'; ?>
+    <?php 
+    include 'src/header.php';
+    include 'Controlers/c_contacts.php'; 
+    ?>
 </html>

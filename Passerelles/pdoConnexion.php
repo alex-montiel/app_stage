@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 
 <?php
-
-    function connect_pdo(){
+class pdoConnexion{
+    public static function connect_pdo(){
         try
         {
             $objPdo = new PDO('mysql:host=127.0.0.1;dbname=bddappli', 'root', '');
@@ -13,3 +13,4 @@
         }
         return $objPdo;
     }
+}

@@ -1,9 +1,10 @@
 <?php
-require '/Classes/Contact.php';
+require '../Classes/Contact.php';
+require 'pdoConnexion.php';
 
 class pdoContacts{
     public static function  load_all_contacts(){
-        $objPdo = connect_pdo();
+        $objPdo = pdoConnexion::connect_pdo();
         $req = 'SELECT * FROM clients';
         $reponse = $objPdo->query($req);
         $tab_reponse = $reponse->fetchAll();

@@ -1,6 +1,4 @@
-body{
-    background-image: url('src/background.jpg');
-}
+
 
 h1{
     text-align: center;
@@ -13,8 +11,8 @@ ul{
 }
 
 li{
-    padding: 10px;
-    margin-left: 20px;
+    padding: 50px;
+    margin: 20px;
     float: left;
 }
 
@@ -26,5 +24,18 @@ ul li a{
 
 #menu_horiz{
     border: solid black;
+}
+
+html{
+    background-image: url('src/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 250px;   
+    margin-left: 400px;
+    margin-right: 400px;
+    border-right: solid black;
+    border-left: solid black;
+    border: solid black;
+    
 }
 
