@@ -23,16 +23,22 @@ class pdoContacts{
     }
     
     public static function ajout_contact($nom, $prenom, $societe, $mail, $telephone){
-        $objPdo = pdoConnexion::connect_pdo();
+        $objPdo = pdoConnexion::getPdoConnexion();
         $id = pdoContacts::getNewId();
         $req = $objPdo->prepare("INSERT INTO clients VALUES (?,?,?,?,?,?);");
-        $req->execute($id, $nom, $prenom, $societe, $mail, $telephone);
-    }
+        $req->execute(array($id, $nom, $prenom, $societe, $mail, $telephone))or die(print_r($objPdo->errorInfo()));
+    }   
+        
     
     public static function getNewId(){
+        $idMax = 1;
         $objPdo = PdoConnexion::getPdoConnexion();
-        $req = "SELECT MAX(id_contact) FROM contacts";
-        $idMax = $objPdo->exec($req) + 1;
+        $req = "SELECT * FROM contacts";
+        $reponse = $objPdo->query($req);
+        $donnees = $reponse->fetchAll();
+        foreach($donnees as $ligne){
+            $idMax = $idMax + 1;
+        }
         return $idMax;
     }
 
