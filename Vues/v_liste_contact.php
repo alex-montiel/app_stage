@@ -26,8 +26,6 @@ include '../src/header.php';
         </tr>
     <?php } ?>
 </table>
-<p>Pour ajouter un autre contact, cliquez sur ce bouton :</p>
-<a href='Vues/v_ajout_contact.php' ><input type='submit' name='button_ajout' value='ajouter'></a>
         
    
 
