@@ -17,11 +17,11 @@ else
             include '../Vues/v_ajout_contact.php';
             break;
         case 'valid_ajout':
-            $nom = filter_input($POST, 'nom_contact');
-            $prenom = filter_input($POST, 'prenom_contact');
-            $societe = filter_input($POST, 'societe_contact');
-            $mail = filter_input($POST, 'mail_contact');
-            $telephone = filter_input($POST, 'telephone_contact');
+            $nom = FILTER_INPUT($POST, 'nom_contact');
+            $prenom = FILTER_INPUT($POST, 'prenom_contact');
+            $societe = FILTER_INPUT($POST, 'societe_contact');
+            $mail = FILTER_INPUT($POST, 'mail_contact');
+            $telephone = FILTER_INPUT($POST, 'telephone_contact');
             pdoContacts::ajout_contact($nom, $prenom, $societe, $mail, $telephone);          
             break;
     }

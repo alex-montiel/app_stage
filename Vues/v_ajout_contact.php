@@ -1,5 +1,5 @@
 <h2>Veuillez remplir les différents champs du formulaire</h2>
-<form id='form_ajout_contact' method='POST' action='c_contacts.php?action=valid_ajout'>
+<form id='form_ajout_contact' method=POST action='c_contacts.php?action=valid_ajout'>
     <label for='nom_contact'>Nom : </label>
     <input type='text' name='nom_contact' id='nom_contact'><br />
     <label for='prenom_contact'>Prenom : </label>

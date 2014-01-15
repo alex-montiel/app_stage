@@ -20,7 +20,7 @@ if($autorisation == true){
 else{
     ?>
     <script type="text/javascript">
-        alert('<?php echo $login; echo $password; ?>');
+        alert('Identifiants incorrects');
     </script>
     <?php
     include 'connect.php';
