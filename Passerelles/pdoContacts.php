@@ -1,6 +1,6 @@
 <?php
-require '../Classes/Contact.php';
-require 'pdoConnexion.php';
+require '../Classes/Contact.class.php';
+include 'pdoConnexion.php';
 
 class pdoContacts{
     public static function  load_all_contacts(){

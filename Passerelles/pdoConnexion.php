@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php 
 
-class PdoConnexion{
+class pdoConnexion{
     
     public static function getPdoConnexion(){
         $objPdo = new PDO('mysql:host=localhost; dbname=bddappli','root', '');

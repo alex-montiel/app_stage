@@ -1,5 +1,6 @@
 <?php
 include 'src/header.php';
+
 ?>
 <body>
     <h1>Bienvenue dans l'application</h1>

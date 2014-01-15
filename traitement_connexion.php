@@ -1,6 +1,6 @@
 <?php
 
-include 'Passerelles/pdoConnexion.php';
+include_once('Passerelles/pdoConnexion.php');
 
 //On récupère les informations du formulaire de connect.php
 $login = filter_input(INPUT_POST, 'login');

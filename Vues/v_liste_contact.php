@@ -1,5 +1,5 @@
 <?php 
-require '../Passerelles/pdoContacts.php';
+require_once('../Passerelles/pdoContacts.php');
 include '../src/header.php';
 ?>
 <table id='liste_contacts' border ='1'>
