@@ -11,5 +11,7 @@
     <label for='telephone_contact'>Telephone : </label>
     <input type='text' name='telephone_contact' id='telephone_contact'><br />
     
+<!--    <a href='../Controlers/c_contacts.php?action=accueil'>-->
     <input type='submit' name='button_valid_ajout' value='Ajouter'>
+<!--    </a>-->
 </form>

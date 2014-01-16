@@ -24,11 +24,20 @@ else
             $mail = $_POST['mail_contact'];
             $telephone = $_POST['telephone_contact'];
             pdoContacts::ajout_contact($nom, $prenom, $societe, $mail, $telephone);
+            include '../Vues/v_accueil.php';
+            break;
+        case 'modifier':
+            require '../Vues/v_modifier.php';
+            break;
+        case 'valid_modifier':
+            require_once '../Passerelles/pdoContacts.php';
+            pdoContacts::modifContact($_REQUEST['id'], $_POST['nom'], $_POST['prenom'], $_POST['societe'], $_POST['mail'], $_POST['telephone']);
             ?>
-            <script type="text/javascript">
-                alert('Le contact à bien été ajouté !');
-            </script>
+            <script type=text/javascript>
+                alert('Ce contact à bien été modifié')
+            </script>    
             <?php
+            include '../Vues/v_modifier.php';
             break;
     }
 }

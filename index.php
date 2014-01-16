@@ -2,5 +2,5 @@
 <?php 
 
 include 'src/header.php';
-include 'connect.php';
+include 'Vues/v_accueil.php';
 ?>
