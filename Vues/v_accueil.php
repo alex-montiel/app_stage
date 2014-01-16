@@ -1,6 +1,11 @@
 <?php
-include_once 'src/header.php';
+ include_once 'src/header.php';
 ?>
+
+<script type="text/javascript">
+    window.name="Accueil";
+    alert (window.name);
+</script>
 <body>
     <h1>Bienvenue dans l'application</h1>
     
@@ -13,7 +18,6 @@ include_once 'src/header.php';
                 win = window.open("","Afficher");
                 if (win.location=="about:blank"){
                     win.location="Controlers/c_contacts.php?action=afficher";
-                    win.onFocus();
                 }
                 else{
                     win.onFocus();
@@ -25,7 +29,6 @@ include_once 'src/header.php';
                 //Test la location si _blank modifier location
                 if (win.location=="about:blank") {
                     win.location="Controlers/c_contacts.php?action=ajouter";
-                    win.focus();
                 }
                 else{
                     win.focus();

@@ -9,6 +9,9 @@ include '../src/header.php';
         win = window.open("", "Modifier");
         if(win.location == "about:blank"){
             win.location = "c_contacts.php?action=modifier&id=" + id;
+        } else {
+            win.location = "c_contacts.php?action=modifier&id=" + id;  
+            alert (win.name);
         }
     }
 </script>

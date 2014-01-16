@@ -9,6 +9,8 @@ include '../src/header.php';
         var win;
         if(url == 'accueil'){
             win = window.open("", "Accueil");
+            alert (win.name);
+            win.focus("Accueil");
         }
         else{
             win = window.open("", "Afficher")
